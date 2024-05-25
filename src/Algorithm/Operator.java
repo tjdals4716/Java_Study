@@ -1,6 +1,6 @@
 package Algorithm;
 
-public class Test {
+public class Operator {
     public static void main(String arg[]){
         int a = 1;
         int b = 3;
