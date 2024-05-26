@@ -1,4 +1,4 @@
-package Algorithm;
+package Practice;
 
 public class Print {
     public static void main(String[] arg){
