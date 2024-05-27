@@ -2,6 +2,7 @@ package Practice;
 
 import java.util.Scanner;
 
+//사용자로부터 두 입력값을 받아 덧셈 결과를 출력하는 프로그램
 public class Scan_int {
     public static void main(String[] arg){
         Scanner scanner = new Scanner(System.in); //System.in은 표준 입력 스트림을 사용하여 사용자로부터 입력을 받기 위함

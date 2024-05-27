@@ -2,6 +2,7 @@ package Practice;
 
 import java.util.Scanner;
 
+//사용자로부터 값을 입력받아 이름과 나이를 출력하는 프로그램
 public class Scan_String {
     public static void main(String[] arg){
         Scanner scanner = new Scanner(System.in); //표준 입력 스트림을 사용하여 Scanner 객체를 생성

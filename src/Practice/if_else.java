@@ -2,6 +2,7 @@ package Practice;
 
 import java.util.Scanner;
 
+//사용자로부터 값을 입력받아 그 값의 대소관계와 얼마나 더 큰지 출력하는 프로그램
 public class if_else {
     public static void main(String[] arg){
         Scanner scanner = new Scanner(System.in);

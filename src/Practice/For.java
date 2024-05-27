@@ -1,5 +1,6 @@
 package Practice;
 
+//1부터 10까지의 합을 출력하는 프로그램
 public class For {
     public static void main(String[] args) {
         int sum = 0; //합계를 저장할 변수를 초기화, 처음에는 0으로 설정
