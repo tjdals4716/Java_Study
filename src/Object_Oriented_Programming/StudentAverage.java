@@ -2,6 +2,7 @@ package Object_Oriented_Programming;
 
 import java.util.Scanner;
 
+//객체지향 프로그래밍, 학생 클래스와 평균을 구하는 메서드를 구현하여 학생의 점수 5개의 평균을 출력하는 프로그램
 public class StudentAverage {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
