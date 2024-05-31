@@ -1,9 +1,9 @@
-package Day7_Practical_Training;
+package Day7_Study;
 
 import java.util.Scanner;
 
 //사용자로부터 문자를 입력받아 그 문자를 나열한 결과를 출력하는 프로그램
-public class Training2 {
+public class Study2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //결과 문자열을 저장할 StringBuilder 객체를 생성

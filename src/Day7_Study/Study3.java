@@ -1,11 +1,11 @@
-package Day7_Practical_Training;
+package Day7_Study;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
 //사용자로부터 배열을 입력받아 내림차순으로 정렬하는 프로그램
-public class Training3 {
+public class Study3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

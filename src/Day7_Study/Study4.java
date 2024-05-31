@@ -1,9 +1,9 @@
-package Day7_Practical_Training;
+package Day7_Study;
 
 import java.util.Scanner;
 
 //사용자로부터 두 숫자와 연산자를 입력받아 계산 결과를 출력하는 프로그램
-public class Training4 {
+public class Study4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a, b;

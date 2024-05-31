@@ -1,9 +1,9 @@
-package Day7_Practical_Training;
+package Day7_Study;
 
 import java.util.Scanner;
 
 //사용자로부터 값을 반복적으로 받아내 그 값만큼 곱과 합의 결과를 출력하는 프로그램
-public class Training1 {
+public class Study1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //sum 변수를 while 루프안에서 초기화하는 것이아니라 while 루프 밖에서 초기화를 해야함

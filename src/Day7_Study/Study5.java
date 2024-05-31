@@ -1,9 +1,9 @@
-package Day7_Practical_Training;
+package Day7_Study;
 
 import java.util.Scanner;
 
 //계산기 심화1 - 사용자로부터 두 숫자와 연산자를 입력받아 계산 결과를 출력하는데 값을 잘 못 입력한다면 되돌리는 프로그램
-public class Training5 {
+public class Study5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = 0;
