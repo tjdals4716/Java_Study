@@ -53,9 +53,9 @@ public class StudentManager {
                 }
             // Exception in thread "main" java.util.InputMismatchException 에러 로그 확인 후 try catch문으로 감싸서 사용
             } catch (InputMismatchException e){
-                System.out.println("현재 입력한 입력한 값은 정수 또는 숫자가 아닙니다. 숫자를 입력하세요");
-                // 잘못된 입력을 없애고 새로운 입력을 받도록 scanner 객체의 next()를 사용
-                scanner.next();
+                System.out.println("현재 입력한 값은 정수 또는 숫자가 아닙니다. 숫자를 입력하세요");
+                // 잘못된 입력을 없애고 새로운 입력을 받도록 scanner 객체의 강의 시간에 배운 nextLint() 또는 next()를 사용
+                scanner.nextLine();
             }
         }
     }
