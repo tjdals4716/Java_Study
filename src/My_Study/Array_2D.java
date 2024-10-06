@@ -1,4 +1,4 @@
-package MyStudy;
+package My_Study;
 
 import java.util.Random;
 
