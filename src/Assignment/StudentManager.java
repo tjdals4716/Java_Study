@@ -53,9 +53,10 @@ public class StudentManager {
                 }
             // Exception in thread "main" java.util.InputMismatchException 에러 로그 확인 후 try catch문으로 감싸서 사용
             } catch (InputMismatchException e){
-                System.out.println("현재 입력한 값은 정수 또는 숫자가 아닙니다. 숫자를 입력하세요");
-                // 잘못된 입력을 없애고 새로운 입력을 받도록 scanner 객체의 강의 시간에 배운 nextLint() 또는 next()를 사용
-                scanner.nextLine();
+                // 현재 입력 스트림에 남아있는 토큰을 확인하려면 아래와 같이 작성 (3-17 참고)
+                String ex = scanner.nextLine();
+                // 잘못된 입력을 없애고 새로운 입력을 받도록 scanner 객체의 nextLine() 사용 (3-17 참고)
+                System.out.println("현재 입력한 " + "'" + ex + "'" + "는(은) 숫자 정수가 아닙니다. 숫자 정수를 입력하세요");
             }
         }
     }
@@ -63,7 +64,6 @@ public class StudentManager {
     // 4. 학점 계산 메소드 (~95 A+, ~ 90 A, ~85 B+, ~ 80 B, ~75 C+, ~70 C, ~65 D+, ~ 60 D, 이하 F)
     // 문자 타입 char은 단 하나의 문자만 저장하므로 문자 두개 이상 리턴 불가
     // ex) A+, 가나다 ...
-    // 문자가 아닌 문자열 String을 사용하니 해결 완료
     public static String calculateGrade(double averageScore) {
         if(95 <= averageScore && averageScore <= 100){
             return "A+";

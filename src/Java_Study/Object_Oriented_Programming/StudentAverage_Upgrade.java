@@ -1,4 +1,4 @@
-package Object_Oriented_Programming;
+package Java_Study.Object_Oriented_Programming;
 
 import java.util.Scanner;
 

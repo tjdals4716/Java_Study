@@ -1,4 +1,4 @@
-package Practice;
+package Java_Study.Practice;
 
 //코드에서 입력한 값에 대한 기본 연산 결과를 출력하는 프로그램
 public class Operator {

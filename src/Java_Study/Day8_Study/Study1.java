@@ -1,4 +1,4 @@
-package Day8_Study;
+package Java_Study.Day8_Study;
 
 public class Study1 {
     public static void main(String[] args) {

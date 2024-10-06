@@ -1,4 +1,4 @@
-package Practice;
+package Java_Study.Practice;
 
 //Java 기본 세팅 관련 단축키
 public class Print {

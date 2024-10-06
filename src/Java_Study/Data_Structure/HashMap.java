@@ -1,4 +1,4 @@
-package Data_Structure;
+package Java_Study.Data_Structure;
 
 class HashMap {
     private final int SIZE = 10000; // 해시맵의 크기

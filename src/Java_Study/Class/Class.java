@@ -1,4 +1,4 @@
-package Class;
+package Java_Study.Class;
 
 public class Class {
     public static void main(String[] arg){

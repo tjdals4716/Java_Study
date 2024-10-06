@@ -1,4 +1,4 @@
-package Practice;
+package Java_Study.Practice;
 
 //1부터 10까지의 합을 출력하는 프로그램
 public class For {

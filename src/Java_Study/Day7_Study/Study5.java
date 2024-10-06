@@ -1,4 +1,4 @@
-package Day7_Study;
+package Java_Study.Day7_Study;
 
 import java.util.Scanner;
 
