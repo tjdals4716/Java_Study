@@ -2,7 +2,7 @@ package My_Study;
 
 import java.util.Scanner;
 
-public class Array2DRotation {
+public class Array2DRatation2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -36,7 +36,7 @@ public class Array2DRotation {
                 a = 0; // 행을 초기화하고 다시 입력받음
                 continue; // 행 입력으로 돌아감
             } else {
-                System.out.println("열을 다시 입력하세요");
+                System.out.println("열을 다시 입력하세요.");
             }
         }
 
@@ -55,16 +55,16 @@ public class Array2DRotation {
 
         // 회전 입력 처리
         while (true) {
-            System.out.print("배열을 왼쪽(-1) 또는 오른쪽(1)으로 한 칸 회전하시겠습니까? (0 입력 시 종료) : ");
+            System.out.print("배열을 왼쪽(-1) 또는 오른쪽(1)으로 회전하시겠습니까? (0 입력 시 종료) : ");
             int rotate = sc.nextInt();
 
             if (rotate == -1) {
-                i = rotateLeft(i);
-                System.out.println("배열이 왼쪽으로 한 칸 회전되었습니다.");
+                i = rotateCounterClockwise(i); // 반시계 방향 회전
+                System.out.println("배열이 반시계 방향으로 회전되었습니다.");
                 printMatrix(i);
             } else if (rotate == 1) {
-                i = rotateRight(i);
-                System.out.println("배열이 오른쪽으로 한 칸 회전되었습니다.");
+                i = rotateClockwise(i); // 시계 방향 회전
+                System.out.println("배열이 시계 방향으로 회전되었습니다.");
                 printMatrix(i);
             } else if (rotate == 0) {
                 System.out.println("프로그램을 종료합니다.");
@@ -85,31 +85,32 @@ public class Array2DRotation {
         }
     }
 
-    // 배열을 왼쪽으로 한 칸 회전하는 함수
-    public static int[][] rotateLeft(int[][] matrix) {
+    // 배열을 시계 방향으로 회전하는 함수
+    public static int[][] rotateClockwise(int[][] matrix) {
         int a = matrix.length;
         int b = matrix[0].length;
-        int[][] rotated = new int[a][b];
+        int[][] rotated = new int[b][a]; // 행과 열의 크기가 바뀜
 
         for (int row = 0; row < a; row++) {
             for (int col = 0; col < b; col++) {
-                rotated[row][col] = matrix[row][(col + 1) % b]; // 오른쪽 열을 왼쪽으로 이동
+                rotated[col][a - 1 - row] = matrix[row][col];
             }
         }
         return rotated;
     }
 
-    // 배열을 오른쪽으로 한 칸 회전하는 함수
-    public static int[][] rotateRight(int[][] matrix) {
+    // 배열을 반시계 방향으로 회전하는 함수
+    public static int[][] rotateCounterClockwise(int[][] matrix) {
         int a = matrix.length;
         int b = matrix[0].length;
-        int[][] rotated = new int[a][b];
+        int[][] rotated = new int[b][a]; // 행과 열의 크기가 바뀜
 
         for (int row = 0; row < a; row++) {
             for (int col = 0; col < b; col++) {
-                rotated[row][col] = matrix[row][(col - 1 + b) % b]; // 왼쪽 열을 오른쪽으로 이동
+                rotated[b - 1 - col][row] = matrix[row][col];
             }
         }
         return rotated;
     }
 }
+
