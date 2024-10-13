@@ -1,4 +1,4 @@
-package Week4_Session2;
+package Week4_Session2.ex_3_13;
 
 public class Calc {
     public static void main(String[] args) {

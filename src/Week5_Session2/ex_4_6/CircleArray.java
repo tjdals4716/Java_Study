@@ -1,4 +1,4 @@
-package Week5_Session2;
+package Week5_Session2.ex_4_6;
 
 class Circle {
     int radius;
@@ -22,12 +22,12 @@ class Circle {
 
 public class CircleArray {
     public static void main(String[] args) {
-        Circle[] c;
-        c = new Circle[5];
+        Circle c[] = new Circle[5];
 
         for(int i = 0;i < c.length;i++){
             c[i] = new Circle(i);
         }
+
         for(int i = 0;i < c.length;i++){
             System.out.print((int)(c[i].getArea()) + " ");
         }

@@ -1,10 +1,10 @@
-package Week6_Session1;
+package Week6_Session1.ex_5_3;
 
-class Point2{
+class Point {
     private int x;
     private int y;
 
-    public Point2(int x, int y){
+    public Point(int x, int y){
         this.x = 0;
         this.y = 0;
     }
@@ -14,9 +14,9 @@ class Point2{
     }
 }
 
-class ColorPoint2 extends Point2{
+class ColorPoint extends Point {
     private String color;
-    public ColorPoint2(int x, int y, String color){
+    public ColorPoint(int x, int y, String color){
         super(x, y);
         this.color = color;
     }
@@ -27,10 +27,9 @@ class ColorPoint2 extends Point2{
     }
 }
 
-
 public class SuperEx {
     public static void main(String[] args) {
-        ColorPoint2 cp = new ColorPoint2(5, 6, "blue");
+        ColorPoint cp = new ColorPoint(5, 6, "blue");
         cp.showColorPoint();
     }
 }

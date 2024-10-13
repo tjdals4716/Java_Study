@@ -1,4 +1,4 @@
-package Week4_Session2;
+package Week4_Session2.ex_3_11;
 
 public class IrregularArray {
     public static void main (String[] args) {
@@ -10,7 +10,7 @@ public class IrregularArray {
 
         for (int i = 0; i < intArray.length; i++)
             for (int j = 0; j < intArray[i].length; j++)
-                intArray[i][j] = (i+1)*10 + j;
+                intArray[i][j] = (i + 1) * 10 + j;
 
         for (int i = 0; i < intArray.length; i++) {
             for (int j = 0; j < intArray[i].length; j++)

@@ -1,4 +1,4 @@
-package Week6_Session1;
+package Week6_Session1.ex_5_1;
 
 class Point{
     private int x, y; // 상속 불가한 것은 private로 정의

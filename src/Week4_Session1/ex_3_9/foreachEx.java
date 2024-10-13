@@ -1,4 +1,4 @@
-package Week4_Session1;
+package Week4_Session1.ex_3_9;
 
 public class foreachEx {
     enum Week {월, 화, 수, 목, 금, 토, 일}

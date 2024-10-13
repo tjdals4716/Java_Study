@@ -1,4 +1,4 @@
-package Week6_Session1;
+package Week6_Session1.ex_5_2;
 
 class Person{
     private int weight;

@@ -1,4 +1,4 @@
-package Week4_Session1;
+package Week4_Session1.ex_3_2;
 
 import java.util.Scanner;
 

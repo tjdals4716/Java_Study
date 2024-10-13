@@ -1,4 +1,4 @@
-package Week5_Session1;
+package Week5_Session1.ex_3_17;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
