@@ -26,7 +26,9 @@ public class CircleArray {
 
         for(int i = 0;i < c.length;i++){
             c[i] = new Circle(i);
+            System.out.print((int)(c[i].getArea()) + " ");
         }
+        System.out.println();
 
         for(int i = 0;i < c.length;i++){
             System.out.print((int)(c[i].getArea()) + " ");
