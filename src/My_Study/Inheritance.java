@@ -10,10 +10,12 @@ public class Inheritance {
 }
 
 class A{
+    // 자식 생성자는 먼저 나오면 안되고 부모 생성자를 무조건 먼저 실행 시킨 뒤 자식 생성자가 실행 됨
     public A(){
         System.out.println("상속, 생성자 테스트");
     }
 
+    // 자식 클래스에 paint나 draw 함수가 없다면 부모 클래스에서 그 함수를 사용
     public void paint(){
         System.out.println("ㅎㅇ");
         draw();
@@ -23,13 +25,15 @@ class A{
     // 오버라이딩의 조건은 상속받고 함수의 명이 같을 때
     public void draw(){
         System.out.println("난 부모의 draw 함수야");
-        draw();
+//        draw();
     }
 }
 
-// 위 메인 함수에서 B()를 통해 B라는 생성자에 접근
+// 위 메인 함수에서 D()를 통해 B라는 생성자에 접근
 // 자식 생성자는 먼저 나오면 안되고 부모 생성자를 무조건 먼저 실행 시킨 뒤 자식 생성자가 실행 됨
-class B extends A{
+// 명시적이지 않을 때는 무조건 부모의 "빈 생성자"를 먼저 실행 후 자식의 빈 생성자든 매개변수를 가진 생성자를 실행
+// 명시적일 땐? super(10) 이런식으로 명시적으로 호출 할 땐 부모의 "매개변수 생성자"를 실행
+class B extends A {
     public B(){
         super.paint();
     }
@@ -38,7 +42,7 @@ class B extends A{
 //        System.out.println("난 자식의 paint 함수야");
 //    }
 
-    public void draw(){
-        System.out.println("난 자식의 draw 함수야");
-    }
+//    public void draw(){
+//        System.out.println("난 자식의 draw 함수야");
+//    }
 }
