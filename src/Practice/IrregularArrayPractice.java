@@ -22,8 +22,10 @@ public class IrregularArrayPractice {
         int total = 0;
         for (int i = 0; i < a.length; i++) {
             total += a[i].length;
+            System.out.println(i + 1 + "번째 열 길이 : " + a[i].length);
         }
 
+        System.out.println("행 길이 : " + a.length);
         System.out.println((double)sum / total);
     }
 }
